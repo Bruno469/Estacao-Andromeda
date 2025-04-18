@@ -1,0 +1,97 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+                      Title="Data Recovery Interface"
+                      MinSize="450 300">
+  <BoxContainer Orientation="Vertical" VerticalExpand="True" SeparationOverride="6" Align="Center">
+
+    <Label Text="Corrupted Data Sequence - Level 1" Align="Center" />
+    <Control MinSize="0 10" />
+
+    <!-- Painel para centralizar os botões -->
+    <PanelContainer HorizontalExpand="True" VerticalExpand="True">
+      <BoxContainer Orientation="Vertical" SeparationOverride="12" Align="Center" VerticalAlignment="Center">
+
+        <!-- Linha 1 -->
+        <PanelContainer HorizontalAlignment="Center" StyleClasses="LowDivider">
+            <BoxContainer Orientation="Horizontal" SeparationOverride="4">
+                <Button Name="Bit0" Text="0" />
+                <Button Name="Bit1" Text="1" />
+                <Button Name="Bit2" Text="1" />
+                <Button Name="Bit3" Text="0" />
+                <Button Name="Bit4" Text="0" />
+                <Button Name="Bit5" Text="1" />
+                <Button Name="Bit6" Text="0" />
+                <Button Name="Bit7" Text="1" />
+            </BoxContainer>
+        </PanelContainer>
+
+        <!-- Linha 2 -->
+        <PanelContainer HorizontalAlignment="Center" StyleClasses="LowDivider">
+            <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" SeparationOverride="4">
+            <Button Name="Bit8" Text="1" />
+            <Button Name="Bit9" Text="1" />
+            <Button Name="Bit10" Text="0" />
+            <Button Name="Bit11" Text="1" />
+            <Button Name="Bit12" Text="1" />
+            <Button Name="Bit13" Text="0" />
+            <Button Name="Bit14" Text="0" />
+            <Button Name="Bit15" Text="1" />
+            </BoxContainer>
+        </PanelContainer>
+
+        <!-- Linha 3 -->
+        <PanelContainer HorizontalAlignment="Center" StyleClasses="LowDivider">
+            <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" SeparationOverride="4">
+            <Button Name="Bit16" Text="0" />
+            <Button Name="Bit17" Text="1" />
+            <Button Name="Bit18" Text="0" />
+            <Button Name="Bit19" Text="0" />
+            <Button Name="Bit20" Text="1" />
+            <Button Name="Bit21" Text="0" />
+            <Button Name="Bit22" Text="1" />
+            <Button Name="Bit23" Text="0" />
+            </BoxContainer>
+        </PanelContainer>
+
+        <!-- Linha 4 -->
+        <PanelContainer HorizontalAlignment="Center" StyleClasses="LowDivider">
+            <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" SeparationOverride="4">
+            <Button Name="Bit24" Text="0" />
+            <Button Name="Bit25" Text="1" />
+            <Button Name="Bit26" Text="1" />
+            <Button Name="Bit27" Text="0" />
+            <Button Name="Bit28" Text="0" />
+            <Button Name="Bit29" Text="0" />
+            <Button Name="Bit30" Text="1" />
+            <Button Name="Bit31" Text="0" />
+            </BoxContainer>
+        </PanelContainer>
+
+        <!-- Linha 5 -->
+        <PanelContainer HorizontalAlignment="Center" StyleClasses="LowDivider">
+            <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" SeparationOverride="4">
+            <Button Name="Bit32" Text="1" />
+            <Button Name="Bit33" Text="1" />
+            <Button Name="Bit34" Text="0" />
+            <Button Name="Bit35" Text="1" />
+            <Button Name="Bit36" Text="0" />
+            <Button Name="Bit37" Text="0" />
+            <Button Name="Bit38" Text="1" />
+            <Button Name="Bit39" Text="0" />
+            </BoxContainer>
+        </PanelContainer>
+
+      </BoxContainer>
+    </PanelContainer>
+
+    <Control MinSize="0 12" />
+
+    <!-- Resultado e botão de confirmação -->
+    <BoxContainer Orientation="Horizontal" SeparationOverride="8" Align="Center">
+      <Button Name="ConfirmButton" Text="Confirm Fixes" />
+    </BoxContainer>
+    <Label Name="StatusLabel" Text="Click the corrupted bits to fix them." StyleClasses="WindowFooterText" Margin="0,10,0,0" />
+
+  </BoxContainer>
+</controls:FancyWindow>

@@ -99,3 +99,21 @@
     sound: /Audio/SimpleStation14/Items/Handling/disk_drop.ogg
   - type: EmitSoundOnLand
     sound: /Audio/SimpleStation14/Items/Handling/disk_drop.ogg
+
+- type: entity
+  parent: BaseItem
+  id: CorruptedTechnologyDisk
+  name: corrupted technology disk
+  description: A damaged disk containing fragmented research data. Requires restoration before use.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Research/researchcorrupteddisk.rsi
+    state: icon
+  - type: StaticPrice
+    price: 200
+  - type: EmitSoundOnPickup
+    sound: /Audio/SimpleStation14/Items/Handling/disk_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/SimpleStation14/Items/Handling/disk_drop.ogg
+  - type: EmitSoundOnLand
+    sound: /Audio/SimpleStation14/Items/Handling/disk_drop.ogg

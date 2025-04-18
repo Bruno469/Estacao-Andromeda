@@ -1,0 +1,26 @@
+- type: entity
+  parent: BaseComputer
+  id: ComputerRecoveryTechnologyDiskTerminal
+  name: recovery tech disk terminal
+  description: A terminal used to Recovery out technology disks.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/recovery_disk_terminal.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: icon
+    - map: ["computerLayerScreen"]
+      state: unshaded
+  - type: ActivatableUI
+    key: enum.RecoveryConsoleUiKey.Key
+  - type: ActivatableUIRequiresPower
+  - type: UserInterface
+    interfaces:
+      enum.RecoveryConsoleUiKey.Key:
+        type: DataRecoveryBoundUserInterface
+  - type: ExtensionCableReceiver
+  - type: Computer
+  - type: PointLight
+    radius: 0.8
+    energy: 0.5
+    color: "#4d6e00"

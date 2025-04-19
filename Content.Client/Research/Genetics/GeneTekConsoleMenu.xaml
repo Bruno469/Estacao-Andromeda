@@ -1,0 +1,48 @@
+﻿<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+                      xmlns:tabs="clr-namespace:Content.Client.Research.Genetics.Tabs"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      x:Class="Content.Client.Research.Genetics.GeneTekConsoleMenu"
+                      Title="GeneTek Console v0.2"
+                      MinSize="650 500"
+                      SetSize="700 550">
+
+    <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True">
+
+        <!-- Painel lateral esquerdo -->
+        <PanelContainer Name="OccupantNamePanel" MinWidth="200" Margin="5">
+            <BoxContainer Orientation="Vertical" Margin="10">
+                <Label Name="OccupantName" Text="Occupant: Lara Lee"/>
+                <Label Text="Health:"/>
+                <ProgressBar Name="HealthBar" MinValue="0" MaxValue="100" Value="100" />
+                <Label Text="Stability:"/>
+                <ProgressBar Name="StabilityBar" MinValue="0" MaxValue="100" Value="100" />
+                <Control MinHeight="20"/>
+                <Label Name="InjectorsLabel" Text="Injectors: Ready"/>
+                <Label Name="EmitterLabel" Text="Emitter: Ready"/>
+            </BoxContainer>
+        </PanelContainer>
+
+        <!-- Painel principal direito -->
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="5">
+
+            <!-- Aba Research -->
+            <TabContainer HorizontalExpand="True" VerticalExpand="False">
+                <tabs:GeneTekResearchTab Name="Research" />
+                <tabs:GeneTekSequencerTab Name="Sequencer" />
+
+                <!-- Abas futuras
+
+                <TabContainer.Tab Title="Storage">
+                    <Label Text="Storage tab" />
+                </TabContainer.Tab>
+
+                <TabContainer.Tab Title="Scanner">
+                    <Label Text="Scanner tab" />
+                </TabContainer.Tab>
+                -->
+            </TabContainer>
+        </BoxContainer>
+    </BoxContainer>
+</controls:FancyWindow>

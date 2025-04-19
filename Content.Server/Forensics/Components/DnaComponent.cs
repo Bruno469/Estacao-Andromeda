@@ -8,4 +8,7 @@ public sealed partial class DnaComponent : Component
 {
     [DataField("dna"), ViewVariables(VVAccess.ReadWrite)]
     public string DNA = String.Empty;
+
+    [DataField("Instability"), ViewVariables(VVAccess.ReadWrite)]
+    public int Instability = 0;
 }

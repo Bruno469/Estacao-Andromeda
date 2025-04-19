@@ -1,0 +1,21 @@
+<tabs:GeneTekResearchTab xmlns="https://spacestation14.io"
+                  xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                  xmlns:tabs="clr-namespace:Content.Client.Research.Genetics.Tabs">
+    <BoxContainer Orientation="Vertical" Margin="10" HorizontalExpand="True" VerticalExpand="True">
+        <Label Text="Statistics" StyleClasses="labelKeyText"/>
+        <BoxContainer Orientation="Vertical" Margin="0 5">
+            <Label Name="MutationsResearchedLabel" Text="Mutations Researched: 0"/>
+        </BoxContainer>
+
+        <Button Name="PurchaseAdditionalMaterialsButton" Text="Purchase Additional Materials" Disabled="True" HorizontalAlignment="Left" Margin="0 5"/>
+
+        <Label Text="Backup Actions" Margin="0 10"/>
+        <PanelContainer Name="ResearchListPanel" VerticalExpand="True">
+            <ScrollContainer VerticalExpand="True">
+                <BoxContainer Orientation="Vertical" Name="ResearchList" VerticalExpand="True">
+                    <!-- Esse conteúdo aqui pode ser limpo e preenchido via C# -->
+                </BoxContainer>
+            </ScrollContainer>
+        </PanelContainer>
+    </BoxContainer>
+</tabs:GeneTekResearchTab>

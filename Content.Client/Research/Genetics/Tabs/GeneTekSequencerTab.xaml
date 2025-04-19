@@ -1,0 +1,54 @@
+<tabs:GeneTekSequencerTab xmlns="https://spacestation14.io"
+                  xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                  xmlns:tabs="clr-namespace:Content.Client.Research.Genetics.Tabs">
+    <BoxContainer Orientation="Vertical" Margin="10" HorizontalExpand="True" VerticalExpand="True">
+        <BoxContainer Orientation="Horizontal" Margin="5">
+
+            <BoxContainer Orientation="Vertical" Margin="0 5" HorizontalExpand="True">
+                <Label Text="Sequences" StyleClasses="labelKeyText"/>
+
+            <BoxContainer Name="ContainerSequences" Orientation="Vertical" Margin="0 5" SeparationOverride="4">
+                <ButtonGroup Name="SequenceButtonGroup" />
+                <GridContainer Name="GridContainerSequences" Columns="2" Margin="5">
+                    <Button Text="Sequence" ToggleMode="True" ButtonGroup="SequenceButtonGroup" MinSize="60 40" MaxSize="80 40" />
+                    <Button Text="Sequence" ToggleMode="True" ButtonGroup="SequenceButtonGroup" MinSize="60 40" MaxSize="80 40" />
+                    <Button Text="Sequence" ToggleMode="True" ButtonGroup="SequenceButtonGroup" MinSize="60 40" MaxSize="80 40" />
+                    <Button Text="Sequence" ToggleMode="True" ButtonGroup="SequenceButtonGroup" MinSize="60 40" MaxSize="80 40" />
+                    <Button Text="Sequence" ToggleMode="True" ButtonGroup="SequenceButtonGroup" MinSize="60 40" MaxSize="80 40" />
+                    <Button Text="Sequence" ToggleMode="True" ButtonGroup="SequenceButtonGroup" MinSize="60 40" MaxSize="80 40" />
+                    <Button Text="Sequence" ToggleMode="True" ButtonGroup="SequenceButtonGroup" MinSize="60 40" MaxSize="80 40" />
+                    <Button Text="Sequence" ToggleMode="True" ButtonGroup="SequenceButtonGroup" MinSize="60 40" MaxSize="80 40" />
+                </GridContainer>
+            </BoxContainer>
+
+            </BoxContainer>
+
+            <BoxContainer Name="ContainerInfo" Orientation="Vertical" Margin="10 5" HorizontalExpand="True">
+                <Label Text="Sequence info" />
+                <PanelContainer MinHeight="100">
+                    <Label Name="sequenceinfolabel" Text="Name: Mutation 13" />
+                </PanelContainer>
+
+            </BoxContainer>
+        </BoxContainer>
+
+            <Label Text="Genome Sequencer™" StyleClasses="labelKeyText" Margin="5 5 0 0"/>
+            <BoxContainer Name="GenomeRow" Orientation="Horizontal" Margin="3 3" SeparationOverride="4">
+                <PanelContainer HorizontalAlignment="Center" StyleClasses="LowDivider">
+                    <GridContainer Name="GridContainerGenome0" Columns="4" Margin="2" VerticalExpand="True" />
+                </PanelContainer>
+
+                <PanelContainer HorizontalAlignment="Center" StyleClasses="LowDivider">
+                    <GridContainer Name="GridContainerGenome1" Columns="4" Margin="2" VerticalExpand="True" />
+                </PanelContainer>
+
+                <PanelContainer HorizontalAlignment="Center" StyleClasses="LowDivider">
+                    <GridContainer Name="GridContainerGenome2" Columns="4" Margin="2" VerticalExpand="True" />
+                </PanelContainer>
+
+                <PanelContainer HorizontalAlignment="Center" StyleClasses="LowDivider">
+                    <GridContainer Name="GridContainerGenome3" Columns="4" Margin="2" VerticalExpand="True" />
+                </PanelContainer>
+            </BoxContainer>
+    </BoxContainer>
+</tabs:GeneTekSequencerTab>

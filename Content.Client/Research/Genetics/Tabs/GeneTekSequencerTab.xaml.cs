@@ -82,16 +82,16 @@ namespace Content.Client.Research.Genetics.Tabs
             switch (button.Text)
             {
                 case "G":
-                    button.Modulate = Color.FromHex("#00FF00");
+                    button.Modulate = Color.FromHex("#00DDDD");
                     break;
                 case "T":
-                    button.Modulate = Color.FromHex("#00AAFF");
+                    button.Modulate = Color.FromHex("#00FF00"); // #00FF00
                     break;
                 case "C":
-                    button.Modulate = Color.FromHex("#FFA500");
+                    button.Modulate = Color.FromHex("#00DDDD");
                     break;
                 case "A":
-                    button.Modulate = Color.FromHex("#00DDDD");
+                    button.Modulate = Color.FromHex("#00FF00"); //#00FF00
                     break;
                 case "X":
                     button.Modulate = Color.FromHex("#AAAAAA");

@@ -1,0 +1,7 @@
+- type: geneMutation
+  id: chameleon
+  mutatename: Chameleon
+  instability: 35
+  addcomponent:
+    components:
+      - type: StealthOnMoveComponent
